@@ -1,10 +1,10 @@
 import arrow_icon from "./arrow_icon.svg";
 
 import appointment_img from "./appointment_img.png";
-import img1 from "./img 1.png";
-import img4 from "./img 4.png";
-import img5 from "./img 5.png";
-import img12 from "./img 12.png";
+import slider1 from "./slider1.png";
+import slider2 from "./slider2.png";
+import slider3 from "./slider3.png";
+import slider4 from "./slider4.png";
 import contactus from "./Contact us.png";
 import Service1 from "./Service1.png";
 import Service2 from "./Service2.png";
@@ -30,14 +30,23 @@ import franchiseImg from "./franchiseImg.png";
 import DirectorImg from "./DirectorImg.png";
 import Imgpage2 from "./ImgPage2.png";
 import Imgpage1 from "./ImgPage1.png";
+import gallery1 from "./gallery1.jpg";
+import gallery2 from "./gallery2.jpg";
+import gallery3 from "./gallery3.jpg";
+import gallery4 from "./gallery4.jpg";
+import gallery5 from "./gallery5.jpg";
+import gallery6 from "./gallery6.jpg";
+import gallery7 from "./gallery7.jpg";
+import gallery8 from "./gallery8.jpg";
+import gallery9 from "./gallery9.jpg";
 
 export const assets = {
   arrow_icon,
   appointment_img,
-  img1,
-  img4,
-  img5,
-  img12,
+  slider1,
+  slider2,
+  slider3,
+  slider4,
   contactus,
   franchiseImg,
   Service1,
@@ -64,3 +73,23 @@ export const assets = {
   Imgpage1,
   Imgpage2,
 };
+
+export const gallery = [
+  gallery3,
+  gallery2,
+  gallery1,
+  gallery6,
+  gallery5,
+  gallery4,
+  gallery7,
+  gallery8,
+  gallery9,
+  
+];
+export const slides = [
+  slider1,
+  slider2,
+  slider3,
+  slider4
+  
+];

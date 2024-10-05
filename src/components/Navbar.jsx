@@ -18,12 +18,18 @@ const Navbar = () => {
           src={logo}
           alt=""
         />
-        <img
+        {/* <img
           src={brandName}
           onClick={() => navigate("/")}
           className="cursor-pointer w-48 md:w-full"
-        ></img>
-        {/* <span className="font-medium"> <span className="text-[blue]">Seven</span> <span className="text-[red]">Senses</span> <span className="text-[#68f660]">Integration</span> <span className="text-[violet]">Center</span></span> */}
+        ></img> */}
+        <span className="font-semibold">
+          {" "}
+          {/* <span className="text-[blue]">Seven</span>{" "} */}
+          <span className="text-[red]">Senses</span>{" "}
+          <span className="text-[#68f660]">Integration</span>{" "}
+          <span className="text-[violet]">Center</span>
+        </span>
       </div>
       <ul className="hidden md:flex items-start gap-5 font-medium ">
         <NavLink to="/">
