@@ -39,6 +39,16 @@ import gallery6 from "./gallery6.jpg";
 import gallery7 from "./gallery7.jpg";
 import gallery8 from "./gallery8.jpg";
 import gallery9 from "./gallery9.jpg";
+import gallery10 from "./gallery10.jpeg";
+import gallery11 from "./gallery11.jpeg";
+import gallery12 from "./gallery12.jpeg";
+import gallery13 from "./gallery13.jpeg";
+import gallery14 from "./gallery14.jpeg";
+import gallery15 from "./gallery15.jpeg";
+import gallery16 from "./gallery16.jpeg";
+import gallery17 from "./gallery17.jpeg";
+import gallery18 from "./gallery18.jpeg";
+
 
 export const assets = {
   arrow_icon,
@@ -84,6 +94,15 @@ export const gallery = [
   gallery7,
   gallery8,
   gallery9,
+  gallery10,
+  gallery11,
+  gallery12,
+  gallery13,
+  gallery14,
+  gallery15,
+  gallery16,
+  gallery17,
+  gallery18,
   
 ];
 export const slides = [
