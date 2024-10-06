@@ -16,7 +16,7 @@ const Home = () => {
         </h1>
         <div className="grid md:grid-cols-2  my-10 gap-8">
           <div className="flex flex-col justify-between text-[#2F2F2F] px-3 font-medium text-justify">
-            <p>
+            <p className="mb-4">
               Welcome to{" "}
               <span className="font-bold text-indigo-600">
                 Seven Senses Integration Center
@@ -40,41 +40,41 @@ const Home = () => {
               difference in shaping a child’s developmental journey and overall
               well-being.
             </p>
-            <br />
-            <p>
-              At <span class="font-bold text-indigo-600">7 Senses</span>, we
+            
+            <p className="mb-4">
+              At <span className="font-bold text-indigo-600">7 Senses</span>, we
               recognize that each child is wonderfully unique, with their own
               distinct strengths, challenges, and aspirations. We take a{" "}
-              <span class="font-bold text-blue-500">holistic approach</span> to
+              <span className="font-bold text-blue-500">holistic approach</span> to
               therapy, which means we don’t just focus on the immediate issues
               but also aim to foster{" "}
-              <span class="font-bold text-green-500">long-term growth</span>,
+              <span className="font-bold text-green-500">long-term growth</span>,
               independence, and confidence. Our highly skilled team of
               therapists, educators, and specialists collaborates across
               multiple disciplines to create individualized and{" "}
-              <span class="italic font-bold text-red-500">
+              <span className="italic font-bold text-red-500">
                 comprehensive treatment plans
               </span>{" "}
               that are specifically tailored to the emotional, behavioral, and
               developmental needs of each child.
             </p>
-            <br />
-            <p>
+            
+            <p className="mb-4">
               Our team is committed to providing a{" "}
-              <span class="font-bold text-indigo-600">
+              <span className="font-bold text-indigo-600">
                 nurturing environment
               </span>{" "}
               where children feel supported, safe, and motivated to grow. We
               believe that strong collaboration between parents, caregivers, and
               educators is key to success. By working closely with families, we
               ensure that every child receives the guidance, care, and{" "}
-              <span class="font-bold text-green-500">encouragement</span> they
+              <span className="font-bold text-green-500">encouragement</span> they
               need both in and outside the therapy center. Whether your child
               requires assistance with{" "}
-              <span class="font-bold text-blue-500">communication</span>,
+              <span className="font-bold text-blue-500">communication</span>,
               behavior, learning, or developmental challenges, we are here to
               walk with them every step of the way on their{" "}
-              <span class="italic font-bold text-red-500">journey to success</span>.
+              <span className="italic font-bold text-red-500">journey to success</span>.
             </p>
           </div>
           <div className="px-6">
