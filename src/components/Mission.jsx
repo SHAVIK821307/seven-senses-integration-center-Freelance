@@ -1,9 +1,9 @@
 import React from "react";
-
+import missionImg from "../assets/missionImg.png"
 const Mission = () => {
   return (
-    <section className="flex flex-col items-center py-16  bg-[#FFF6E0] md:px-10 lg:px-20">
-      <h1 className="text-[#2F2F2F] text-3xl md:text-4xl lg:text-5xl mb-8  font-bold ">
+    <section className="flex flex-col items-center py-16  bg-[#FFF6E0] md:px-10 lg:px-20 bg-cover bg-center" style={{backgroundImage:`url(${missionImg})`}}>
+      <h1 className="text-black text-3xl md:text-4xl lg:text-5xl mb-8  font-extrabold ">
         Our Mission
       </h1>
       <p className="font-semibold text-justify px-3">

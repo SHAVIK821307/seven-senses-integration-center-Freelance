@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 const Director = () => {
   return (
     <section className="flex flex-col items-center py-16 min-h-screen bg-[#FFF6E0] md:px-10 lg:px-20">
-      <h1 className="text-[#2F2F2F] text-3xl md:text-4xl lg:text-5xl  font-bold ">
+      <h1 className="text-black text-3xl md:text-4xl lg:text-5xl  font-extrabold ">
         Director’s Profile
       </h1>
       <div className="grid md:grid-cols-2  my-10 gap-8">

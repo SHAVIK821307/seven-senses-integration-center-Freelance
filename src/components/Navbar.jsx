@@ -10,6 +10,7 @@ const Navbar = () => {
 
   const [showMenu, setShowMenu] = useState(false);
   return (
+    <>
     <div className="flex bg-[white] items-center justify-between text-sm py-4 mb-5 px-2 sm:px-[2%]  border-b border-b-gray-400">
       <div className="flex items-center">
         <img
@@ -23,12 +24,12 @@ const Navbar = () => {
           onClick={() => navigate("/")}
           className="cursor-pointer w-48 md:w-full"
         ></img> */}
-        <span className="font-semibold">
+        <span className="font-extrabold text-xl">
           {" "}
           {/* <span className="text-[blue]">Seven</span>{" "} */}
-          <span className="text-[red]">Senses</span>{" "}
-          <span className="text-[#68f660]">Integration</span>{" "}
-          <span className="text-[violet]">Center</span>
+          <span className="text-blue-500">Senses</span>{" "}
+          <span className="text-purple-950">Integration</span>{" "}
+          <span className="text-green-600">Center</span>
         </span>
       </div>
       <ul className="hidden md:flex items-start gap-5 font-medium ">
@@ -60,11 +61,18 @@ const Navbar = () => {
       </NavLink>
 
       {/* ===========Mobile Menu=========== */}
-      <div className="md:hidden">
+      <div className="flex flex-col md:hidden">
+
         <HiMenuAlt3
           onClick={() => setShowMenu(true)}
-          className="text-3xl md:hidden cursor-pointer"
-        />
+          className="text-3xl md:hidden cursor-pointer m-auto"
+          />
+          <span onClick={() => setShowMenu(true)}
+          className="text-sm md:hidden cursor-pointer text-center">MENU</span>
+          </div>
+      
+    </div>
+    <div className="md:hidden">
         <div
           className={`${
             showMenu ? "fixed w-full" : "h-0 w-0"
@@ -98,7 +106,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </div>
+          </>
   );
 };
 

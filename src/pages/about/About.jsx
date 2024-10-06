@@ -9,7 +9,7 @@ const About = () => {
     <>
       <Director></Director>
       <section className="flex flex-col items-center py-16 min-h-screen bg-[#FFF6E0] md:px-10 lg:px-20">
-        <h1 className="text-[#2F2F2F] text-3xl md:text-4xl lg:text-5xl  font-semibold ">
+        <h1 className="text-black text-3xl md:text-4xl lg:text-5xl  font-extrabold ">
           About Us
         </h1>
         <div className="grid md:grid-cols-2  my-10 gap-8">
