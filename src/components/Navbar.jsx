@@ -24,12 +24,12 @@ const Navbar = () => {
           onClick={() => navigate("/")}
           className="cursor-pointer w-48 md:w-full"
         ></img> */}
-        <span className="font-extrabold text-xl logo" onClick={() => navigate("/")}>
+        <span className="font-extrabold text-xl logo cursor-pointer" onClick={() => navigate("/")}>
           {" "}
           {/* <span className="text-[blue]">Seven</span>{" "} */}
-          <span className="text-blue-500">Senses</span>{" "}
-          <span className="text-purple-950">Integration</span>{" "}
-          <span className="text-green-600">Center</span>
+          <span className="text-blue-500 cursor-pointer" onClick={() => navigate("/")}>Senses</span>{" "}
+          <span className="text-purple-950 cursor-pointer" onClick={() => navigate("/")}>Integration</span>{" "}
+          <span className="text-green-600 cursor-pointer" onClick={() => navigate("/")}>Center</span>
         </span>
       </div>
       <ul className="hidden md:flex items-start gap-5 font-medium ">
