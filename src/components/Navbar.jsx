@@ -24,7 +24,7 @@ const Navbar = () => {
           onClick={() => navigate("/")}
           className="cursor-pointer w-48 md:w-full"
         ></img> */}
-        <span className="font-extrabold text-xl">
+        <span className="font-extrabold text-xl logo">
           {" "}
           {/* <span className="text-[blue]">Seven</span>{" "} */}
           <span className="text-blue-500">Senses</span>{" "}

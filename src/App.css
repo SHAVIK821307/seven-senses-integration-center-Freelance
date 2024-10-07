@@ -1,0 +1,9 @@
+@font-face {
+  font-family: COOPBL;
+  src: url(../src/assets/COOPBL.TTF);
+}
+.logo {
+  font-family: COOPBL;
+  font-style: italic;
+  font-size: x-large;
+}

@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Services from "./pages/service/Services";
 import Franchise from "./pages/franchise/Franchise";
 import Footer from "./components/Footer";
+import "./App.css";
 const App = () => {
   return (
     <>
