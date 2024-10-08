@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css"; // Create and import your CSS file for custom styles
 import { assets } from "../../assets/assets";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [inputs, setinputs] = useState({
@@ -12,10 +13,29 @@ const Contact = () => {
     Message: "",
   });
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    console.log(inputs);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   console.log(inputs);
     
+  // };
+ 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_zs4ivms', 'template_xqvxc48', form.current, {
+        publicKey: 'HC7qzl8Qkd5mU9Y0y',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
   return (
     <div className="main">
@@ -30,12 +50,13 @@ const Contact = () => {
         {/* FORM starts here */}
         <div className="form1 lg:px-8">
           {/* <h1 id="thirdtext">Tell us how we can help</h1> */}
-          <form onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="input1">
               <label htmlFor="name">Name:</label>
               <input
                 type="text"
                 id="name"
+                name="from_name"
                 value={inputs.Name}
                 onChange={(e) => {
                   setinputs({ ...inputs, Name: e.target.value });
@@ -48,6 +69,7 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
+                name="from_email"
                 value={inputs.Email}
                 onChange={(e) => {
                   setinputs({ ...inputs, Email: e.target.value });
@@ -61,6 +83,7 @@ const Contact = () => {
                 type="text"
                 placeholder=""
                 id="phone"
+                name="phn_no"
                 value={inputs.Phone}
                 onChange={(e) => {
                   setinputs({ ...inputs, Phone: e.target.value });
@@ -73,6 +96,7 @@ const Contact = () => {
               <label htmlFor="message">Message/Comment:</label>
               <textarea
                 id="message"
+                name="message"
                 value={inputs.Message}
                 onChange={(e) => {
                   setinputs({ ...inputs, Message: e.target.value });
