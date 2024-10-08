@@ -4,6 +4,7 @@ import { assets } from "../../assets/assets";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdEmail } from "react-icons/md";
 import emailjs from '@emailjs/browser';
+import { toast } from "react-toastify";
 
 const Contact = () => {
   const [inputs, setinputs] = useState({
@@ -25,15 +26,23 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm('service_zs4ivms', 'template_xqvxc48', form.current, {
-        publicKey: 'HC7qzl8Qkd5mU9Y0y',
+      .sendForm('service_9j65t4p', 'template_apesqfr', form.current, {
+        publicKey: 'N_PLGssKjvBpP5_1V',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          toast.success("Message Sent Successfully !")
+          setinputs({
+            Name: "",
+            Email: "",
+            Phone: "",
+            Message: "",
+          })
         },
         (error) => {
           console.log('FAILED...', error.text);
+          toast.error("Error Notification !");
         },
       );
   };
