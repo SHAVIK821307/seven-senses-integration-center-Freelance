@@ -13,6 +13,7 @@ const Contact = () => {
     Phone: "",
     Message: "",
   });
+  const [loading,setLoading]=useState(false)
 
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
@@ -24,7 +25,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true)
     emailjs
       .sendForm('service_9j65t4p', 'template_apesqfr', form.current, {
         publicKey: 'N_PLGssKjvBpP5_1V',
@@ -39,10 +40,12 @@ const Contact = () => {
             Phone: "",
             Message: "",
           })
+          setLoading(false)
         },
         (error) => {
           console.log('FAILED...', error.text);
-          toast.error("Error Notification !");
+          toast.error("Error Message not sent !");
+          setLoading(false)
         },
       );
   };
@@ -113,7 +116,7 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <input type="submit" value="Send" />
+            <input type="submit" value={loading? "Sending...":"Send"}  disabled={loading ? true: false } />
           </form>
         </div>
         {/* image starts here */}
@@ -164,7 +167,7 @@ const Contact = () => {
             </p>
             <p className="text-[#2F2F2F] text-xl my-2">
               <MdEmail className="text-3xl md:text-3xl lg:text-4xl  font-semibold inline" />{" "}
-              xyz@gmail.com
+              Payelmaity788@gmail.com
             </p>
           </div>
         </div>
