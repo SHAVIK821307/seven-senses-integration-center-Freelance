@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* <span className="text-[blue]">Seven</span>{" "} */}
           <span className="text-blue-500 cursor-pointer" onClick={() => navigate("/")}>Senses</span>{" "}
           <span className="text-purple-950 cursor-pointer" onClick={() => navigate("/")}>Integration</span>{" "}
-          <span className="text-green-600 cursor-pointer" onClick={() => navigate("/")}>Center</span>
+          <span className="text-green-600 cursor-pointer" onClick={() => navigate("/")}>Centre</span>
         </span>
       </div>
       <ul className="hidden md:flex items-start gap-5 font-medium ">
