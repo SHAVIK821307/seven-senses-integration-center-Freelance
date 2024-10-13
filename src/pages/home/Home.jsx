@@ -5,6 +5,7 @@ import Vision from "../../components/Vision";
 import Mission from "../../components/Mission";
 import Director from "../../components/Director";
 import Whyus from "../../components/Whyus";
+import ServicesHome from "../service/ServicesHome";
 import { assets } from "../../assets/assets";
 const Home = () => {
   return (
@@ -87,6 +88,7 @@ const Home = () => {
       <Imgpage></Imgpage>
       <Vision></Vision>
       <Mission></Mission>
+      <ServicesHome></ServicesHome>
       <Director></Director>
       <Whyus></Whyus>
     </>

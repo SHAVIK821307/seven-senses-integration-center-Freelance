@@ -11,7 +11,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-    <div className="flex bg-[white] items-center justify-between text-sm py-4 mb-5 px-2 sm:px-[2%]  border-b border-b-gray-400">
+    <div className="flex bg-[white] items-center justify-between text-sm py-4 mb-5 px-2 sm:px-[2%]  ">
       <div className="flex items-center">
         <img
           onClick={() => navigate("/")}
@@ -68,7 +68,7 @@ const Navbar = () => {
           className="text-3xl md:hidden cursor-pointer m-auto"
           />
           <span onClick={() => setShowMenu(true)}
-          className="text-sm md:hidden cursor-pointer text-center">MENU</span>
+          className="text-sm md:hidden cursor-pointer text-center font-extrabold">MENU</span>
           </div>
       
     </div>
