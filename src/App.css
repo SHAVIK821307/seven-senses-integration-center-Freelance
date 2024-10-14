@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: COOPBL;
   src: url(../src/assets/COOPBL.TTF);
 }
@@ -6,7 +6,7 @@
   font-family: COOPBL;
   font-style: italic;
   font-size: x-large;
-}
+} */
 .butGlow {
   background-color: #004A7F;
   -webkit-border-radius: 10px;

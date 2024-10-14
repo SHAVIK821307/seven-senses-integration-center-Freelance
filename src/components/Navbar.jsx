@@ -11,7 +11,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <>
-    <div className="flex bg-[white] items-center justify-between text-sm py-4 mb-5 px-2 sm:px-[2%]  ">
+    <div className="flex bg-[white] items-center justify-center md:justify-between text-sm py-4 mb-5 px-2 sm:px-[2%]  ">
       <div className="flex items-center">
         <img
           onClick={() => navigate("/")}
@@ -27,9 +27,9 @@ const Navbar = () => {
         <span className="font-extrabold text-xl logo cursor-pointer" onClick={() => navigate("/")}>
           {" "}
           {/* <span className="text-[blue]">Seven</span>{" "} */}
-          <span className="text-blue-500 cursor-pointer" onClick={() => navigate("/")}>Senses</span>{" "}
-          <span className="text-purple-950 cursor-pointer" onClick={() => navigate("/")}>Integration</span>{" "}
-          <span className="text-green-600 cursor-pointer" onClick={() => navigate("/")}>Centre</span>
+          <span className="text-blue-500 cursor-pointer uppercase" onClick={() => navigate("/")}>Senses</span>{" "}
+          <span className="text-purple-950 cursor-pointer uppercase " onClick={() => navigate("/")}>Integration</span>{" "}
+          <span className="text-green-600 cursor-pointer uppercase" onClick={() => navigate("/")}>Centre</span>
         </span>
       </div>
       <ul className="hidden md:flex items-start gap-5 font-medium ">
