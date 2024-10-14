@@ -7,6 +7,7 @@ import Director from "../../components/Director";
 import Whyus from "../../components/Whyus";
 import ServicesHome from "../service/ServicesHome";
 import { assets } from "../../assets/assets";
+import CallNow from "../../components/CallNow";
 const Home = () => {
   return (
     <>
@@ -85,6 +86,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <CallNow></CallNow>
       <Imgpage></Imgpage>
       <Vision></Vision>
       <Mission></Mission>

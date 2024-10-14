@@ -16,7 +16,7 @@ const App = () => {
     <>
       <div className="min-h-screen flex flex-col ">
         <Navbar></Navbar>
-        <CallNow></CallNow>
+        
         <div className="mx-0 sm:mx-[2%]">
           <Routes>
             <Route path="/" element={<Home />} />

@@ -60,23 +60,23 @@ const Navbar = () => {
         </span>
       </NavLink>
 
+      
+    </div>
       {/* ===========Mobile Menu=========== */}
-      <div className="flex flex-col md:hidden">
+      <div className="flex flex-col md:hidden w-full px-4 bg-black text-white">
 
         <HiMenuAlt3
           onClick={() => setShowMenu(true)}
-          className="text-3xl md:hidden cursor-pointer m-auto"
+          className="text-3xl md:hidden cursor-pointer ml-1  "
           />
           <span onClick={() => setShowMenu(true)}
-          className="text-sm md:hidden cursor-pointer text-center font-extrabold">MENU</span>
+          className="text-base md:hidden cursor-pointer font-extrabold">MENU</span>
           </div>
-      
-    </div>
     <div className="md:hidden">
         <div
           className={`${
             showMenu ? "fixed w-full" : "h-0 w-0"
-          } md:hidden right-0 top-0 bottom-0 z-20 overflow-hidden bg-white transition-all`}
+          } md:hidden right-0 top-0 bottom-0 z-50 overflow-hidden bg-white transition-all`}
         >
           <div className=" w-full px-4 py-6">
             <ImCross
