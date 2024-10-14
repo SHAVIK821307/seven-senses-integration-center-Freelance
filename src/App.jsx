@@ -10,6 +10,7 @@ import Franchise from "./pages/franchise/Franchise";
 import Footer from "./components/Footer";
 import CallNow from "./components/CallNow";
 import "./App.css";
+import Whatsapp from "./components/Whatsapp";
 const App = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/franchise" element={<Franchise />} />
           </Routes>
         </div>
+        <Whatsapp></Whatsapp>
         <Footer></Footer>
       </div>
     </>
